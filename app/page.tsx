@@ -1,5 +1,5 @@
 const HomePage = () => {
-  return <div>It should be in Right Grotesk</div>;
+  return <div>Hello world</div>;
 };
 
 export default HomePage;
