@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { messinaSans, biroScript, biroScriptUS } from "@/utils/customFonts";
 import localFont from "next/font/local";
 
 import "./globals.css";
@@ -27,7 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rightGrotesk.className}>{children}</body>
+      <body
+        className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

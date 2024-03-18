@@ -10,6 +10,11 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      messinaSans: ["var(--font-messina-sans)"],
+      biroScript: ["var(--font-biro-script)"],
+      biroScriptUS: ["var(--font-biro-script-us)"],
+    },
     container: {
       center: true,
       padding: "2rem",
