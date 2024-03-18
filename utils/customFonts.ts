@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
 
+const rightGrotesk = localFont({
+  src: "../public/fonts/RightGrotesk/font.otf",
+});
+
 const biroScript = localFont({
   src: [
     {
@@ -34,4 +38,4 @@ const messinaSans = localFont({
   variable: "--font-messina-sans",
 });
 
-export { biroScript, biroScriptUS, messinaSans };
+export { rightGrotesk, biroScript, biroScriptUS, messinaSans };

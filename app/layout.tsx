@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { messinaSans, biroScript, biroScriptUS } from "@/utils/customFonts";
-import localFont from "next/font/local";
-
 import "./globals.css";
 
-const rightGrotesk = localFont({
-  src: "../public/fonts/RightGrotesk/font.otf",
-});
+import {
+  rightGrotesk,
+  messinaSans,
+  biroScript,
+  biroScriptUS,
+} from "@/utils/customFonts";
 
 export const metadata: Metadata = {
   title: "Ape NFT",
