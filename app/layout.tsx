@@ -31,7 +31,8 @@ export default function RootLayout({
       <body
         className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
       >
-        {children}
+        <main>{children}</main>
+        <footer>footer</footer>
       </body>
     </html>
   );
