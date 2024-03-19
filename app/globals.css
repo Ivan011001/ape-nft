@@ -11,6 +11,8 @@ body,
 body {
   display: flex;
   flex-direction: column;
+
+  background-color: #1e1e1e;
 }
 
 main {
