@@ -17,10 +17,22 @@ const config = {
     },
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "72px",
+        md: "88px",
+        lg: "120px",
       },
+      screens: {
+        sm: "360px",
+        md: "768px",
+        lg: "1440px",
+      },
+    },
+    screens: {
+      sm: "360px",
+      md: "768px",
+      lg: "1440px",
     },
     extend: {
       colors: {
