@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="container pt-[60px] md:pt-[80px] lg:pt-[107px]">
+    <section className="container pt-[60px] md:pt-[80px] lg:pt-[120px]">
       <div className="md:relative flex flex-col md:flex-row md:flex-wrap justify-between">
-        <p className="md:w-[269px] lg:w-[538px] max-h-fit text-white font-black text-[40px] md:text-6xl lg:text-[120px] leading-10 md:leading-[60px] lg:leading-[120px] uppercase md:mt-[-8px] lg:mt-[-18px] mb-4 md:mb-[68px] lg:mb-[149px]">
+        <p className="md:w-[269px] lg:w-[538px] max-h-fit text-white font-black text-[40px] md:text-6xl lg:text-[120px] leading-10 md:leading-[60px] lg:leading-[120px] uppercase md:mt-[-8px] lg:mt-[-18px] mb-4 md:mb-[68px] lg:mb-14">
           A story that started with{" "}
           <span className="text-rose-500">
             one simple <br className="md:hidden" />
@@ -19,7 +19,7 @@ const About = () => {
           <br className="hidden md:block" /> YACHT
         </p>
 
-        <div className="md:w-[269px] lg:w-[417px] flex flex-col items-center justify-center gap-4 md:gap-6 mb-6 md:mb-9 lg:mb-[82px]">
+        <div className="md:w-[269px] lg:w-[417px] flex flex-col items-center justify-center gap-4 md:gap-6 mb-6 md:mb-9 lg:mb-10">
           <svg className="h-6 w-6 lg:h-9 lg:w-9">
             <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
           </svg>
@@ -33,9 +33,9 @@ const About = () => {
         <Image
           src="/images/about.png"
           alt="Ape with glasses"
-          width={610}
-          height={822}
-          className="md:absolute md:bottom-0 md:right-0 w-[216px] h-[292px] md:w-[313px] md:h-[422px] lg:w-[610px] lg:h-[822px]"
+          width={492}
+          height={662}
+          className="md:absolute md:bottom-0 md:right-0 w-[216px] h-[292px] md:w-[313px] md:h-[422px] lg:w-[492px] lg:h-[662px]"
         />
       </div>
 
