@@ -33,5 +33,8 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M23.779 9.636l-14.142 14.142-1.414-1.414 14.142-14.142 1.414 1.414z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M9.635 8.221l14.142 14.142-1.414 1.414-14.142-14.142 1.414-1.414z"></path>
 </symbol>
+<symbol id="icon-up-left" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M9.973 8h14.027v14.027h-4.316v-6.659l-8.632 8.632-3.052-3.052 8.632-8.632h-6.659v-4.316z"></path>
+</symbol>
 </defs>
 </svg>
