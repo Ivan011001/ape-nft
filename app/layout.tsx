@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
       >
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );
