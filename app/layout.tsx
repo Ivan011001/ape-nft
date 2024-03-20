@@ -15,7 +15,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icons/logo.svg",
+        media: "(prefers-color-scheme: light)",
+        url: "/icons/favicon-dark.svg",
+        href: "/icons/favicon-dark.svg",
+      },
+
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/icons/favicon.svg",
+        href: "/icons/favicon.svg",
       },
     ],
   },
@@ -31,8 +39,7 @@ export default function RootLayout({
       <body
         className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
       >
-        <main>{children}</main>
-        <footer>footer</footer>
+        {children}
       </body>
     </html>
   );

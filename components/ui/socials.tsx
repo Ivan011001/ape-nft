@@ -1,29 +1,17 @@
 const SOCIALS = [
   {
     href: "",
-    icon: (
-      <svg className="h-4 w-4 md:w-6 md:h-6 stroke-ston-900">
-        <use xlinkHref="/icons/sprite.svg#icon-discord"></use>
-      </svg>
-    ),
+    icon: <use xlinkHref="/icons/sprite.svg#icon-discord"></use>,
   },
 
   {
     href: "",
-    icon: (
-      <svg className="h-4 w-4 md:w-6 md:h-6 stroke-ston-900">
-        <use xlinkHref="/icons/sprite.svg#icon-ship"></use>
-      </svg>
-    ),
+    icon: <use xlinkHref="/icons/sprite.svg#icon-ship"></use>,
   },
 
   {
     href: "",
-    icon: (
-      <svg className="h-4 w-4 md:w-6 md:h-6 stroke-ston-900">
-        <use xlinkHref="/icons/sprite.svg#icon-twitter"></use>
-      </svg>
-    ),
+    icon: <use xlinkHref="/icons/sprite.svg#icon-twitter"></use>,
   },
 ];
 
@@ -35,8 +23,10 @@ const Socials = () => {
           key={index}
           className="h-12 w-12 lg:h-20 lg:w-20 bg-stone-900 bg-opacity-10 rounded-lg md:rounded-[12px] backdrop-blur-md"
         >
-          <button className="w-full h-full flex justify-center items-center text-stone-900 text-xs font-semibold font-messinaSans leading-[14px]">
-            {social.icon}
+          <button className="group w-full h-full flex justify-center items-center text-stone-900 text-xs font-semibold font-messinaSans leading-[14px]">
+            <svg className="h-4 w-4 md:w-6 md:h-6 fill-stone-900 group-hover:fill-white transition-all duration-300">
+              {social.icon}
+            </svg>
           </button>
         </li>
       ))}

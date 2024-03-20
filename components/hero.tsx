@@ -1,8 +1,12 @@
+import Header from "./header";
+
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="md:relative bg-rose-500 rounded-[12px] md:rounded-[16px] lg:rounded-[24px] pb-[19px] md:pb-[35px] lg:pb-[111px] pt-9 md:pt-[124px] lg:pt-[182px]">
+    <section className="relative bg-rose-500 rounded-[12px] md:rounded-[16px] lg:rounded-[24px] pb-[19px] md:pb-[35px] lg:pb-[111px] pt-9 md:pt-[124px] lg:pt-[182px]">
+      <Header />
+
       <div className="container">
         <p className="text-stone-900 text-base md:text-xl lg:text-2xl font-normal font-biroScript leading-[27px] md:leading-[33px] lg:leading-10 text-center md:text-start">
           diD yOu seE iT ?
@@ -29,7 +33,7 @@ const Hero = () => {
 
         <div className="md:flex justify-end">
           <div className="md:w-[190px] lg:w-[337px] flex flex-col md:flex-col-reverse gap-3 md:gap-4 lg:gap-7 lg:mt-[10px]">
-            <button className="w-full relative top-[-5px] pt-2.5 pb-3 lg:pt-4 lg:pb-5 bg-stone-900 bg-opacity-10 rounded-lg lg:rounded-xl backdrop-blur-md inline-flex justify-center items-center">
+            <button className="w-full relative top-[-4px] pt-2.5 pb-3 lg:pt-4 lg:pb-5 bg-stone-900 bg-opacity-10 rounded-lg lg:rounded-xl backdrop-blur-md inline-flex justify-center items-center">
               <p className="text-white md:text-stone-900 text-base lg:text-[28px] font-black leading-[19px]">
                 MEET APES
               </p>
