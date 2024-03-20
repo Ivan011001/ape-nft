@@ -9,6 +9,7 @@ import {
 } from "@/utils/customFonts";
 
 export const metadata: Metadata = {
+  // metadataBase: new URL(""),
   title: "Ape NFT",
   description:
     "Discover more about your favorite ape NFTs and how you can manage them!",
@@ -24,6 +25,20 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
         url: "/icons/favicon.svg",
         href: "/icons/favicon.svg",
+      },
+    ],
+  },
+  openGraph: {
+    title: "Ape NFT",
+    description:
+      "Discover more about your favorite ape NFTs and how you can manage them!",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/open-graph.png",
+        width: 800,
+        height: 600,
       },
     ],
   },
