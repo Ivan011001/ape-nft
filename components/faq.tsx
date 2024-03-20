@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import Image from "next/image";
+
 import Title from "./ui/title";
 import {
   Accordion,
@@ -9,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
 import { cn } from "@/lib/utils";
 
 const FAQ_ITEMS = [
@@ -59,7 +62,8 @@ const FAQ = () => {
             value={index.toString()}
             key={index}
             className={cn(
-              "px-2 pt-2 md:pt-[18px] md:pr-4 md:pl-[183px] lg:pt-6 lg:pr-6 lg:pl-[297px]",
+              "relative px-2 pt-2 md:pt-[18px] md:pr-4 md:pl-[183px] lg:pt-6 lg:pr-6 lg:pl-[297px]",
+
               selectedItemIndex === index &&
                 "bg-stone-900 rounded-xl md:rounded-2xl lg:rounded-3xl"
             )}
@@ -85,7 +89,15 @@ const FAQ = () => {
                 {item.question}
               </h3>
             </AccordionTrigger>
-            <AccordionContent className="text-white text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px] mt-[10px] md:mt-3 lg:mt-9">
+            <AccordionContent className="text-white text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px] mt-[10px] md:mt-3 lg:mt-9 md:flex">
+              <Image
+                src={`/images/faq/ape-${index + 1}.jpg`}
+                alt="Ape"
+                width={248}
+                height={282}
+                className="origin-top-left hidden md:block md:absolute md:rounded-2xl lg:rounded-3xl md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px] md:rotate-[-16deg] lg:rotate-[-8deg] left-0 top-0"
+              />
+
               {item.answer}
             </AccordionContent>
           </AccordionItem>
