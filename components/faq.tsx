@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 
+import Section from "./ui/section";
 import Title from "./ui/title";
 import {
   Accordion,
@@ -45,7 +46,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="container pt-[60px] md:pt-[80px] lg:pt-[120px]">
+    <Section>
       <div className="mb-6 md:mb-12 lg:mb-20">
         <Title>FAQ</Title>
       </div>
@@ -102,7 +103,7 @@ const FAQ = () => {
           </AccordionItem>
         ))}
       </Accordion>
-    </section>
+    </Section>
   );
 };
 
