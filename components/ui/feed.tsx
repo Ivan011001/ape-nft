@@ -29,7 +29,7 @@ const FEED_ITEMS = [
 
 const Feed = () => {
   return (
-    <div className="h-[52px] md:h-[86px] bg-rose-500">
+    <div className="pt-[6px] pb-[9px] lg:pb-4 bg-rose-500">
       <InfiniteMovingCards
         items={FEED_ITEMS}
         direction="right"
