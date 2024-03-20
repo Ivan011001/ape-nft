@@ -9,7 +9,7 @@ import {
 } from "@/utils/customFonts";
 
 export const metadata: Metadata = {
-  // metadataBase: new URL(""),
+  metadataBase: new URL("https://ape-nft-rouge.vercel.app/"),
   title: "Ape NFT",
   description:
     "Discover more about your favorite ape NFTs and how you can manage them!",
