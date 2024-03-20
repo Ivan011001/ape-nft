@@ -36,6 +36,7 @@ const About = () => {
           width={492}
           height={662}
           className="md:absolute md:bottom-0 md:right-0 w-[216px] h-[292px] md:w-[313px] md:h-[422px] lg:w-[492px] lg:h-[662px]"
+          priority
         />
       </div>
 
