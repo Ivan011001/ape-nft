@@ -20,7 +20,7 @@ const About = () => {
         </p>
 
         <div className="md:w-[269px] lg:w-[417px] flex flex-col items-center justify-center gap-4 md:gap-6 mb-6 md:mb-9 lg:mb-10">
-          <svg className="h-6 w-6 lg:h-9 lg:w-9">
+          <svg className="h-6 w-6 lg:h-9 lg:w-9 fill-white">
             <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
           </svg>
 

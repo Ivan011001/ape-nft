@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import MindMap from "@/components/mind-map";
+import FAQ from "@/components/faq";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
 
       <About />
       <MindMap />
+      <FAQ />
     </main>
   );
 };
