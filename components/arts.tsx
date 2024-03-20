@@ -24,7 +24,7 @@ const Arts = () => {
           </li>
         </ul>
 
-        <Pagination />
+        {/* <Pagination /> */}
       </div>
     </Section>
   );
