@@ -33,10 +33,8 @@ const Hero = () => {
 
         <div className="md:flex justify-end">
           <div className="md:w-[190px] lg:w-[337px] flex flex-col md:flex-col-reverse gap-3 md:gap-4 lg:gap-7 lg:mt-[10px]">
-            <button className="w-full relative top-[-4px] pt-2.5 pb-3 lg:pt-4 lg:pb-5 bg-stone-900 bg-opacity-10 rounded-lg lg:rounded-xl backdrop-blur-md inline-flex justify-center items-center">
-              <p className="text-white md:text-stone-900 text-base lg:text-[28px] font-black leading-[19px]">
-                MEET APES
-              </p>
+            <button className="w-full relative top-[-4px] pt-2.5 pb-3 lg:pt-4 lg:pb-5 bg-stone-900 bg-opacity-10 rounded-lg lg:rounded-xl backdrop-blur-md inline-flex justify-center items-center text-white hover:text-stone-900 md:text-stone-900 md:hover:text-white text-base lg:text-[28px] font-black leading-[19px] uppercase transition-all duration-300">
+              Meet Apes
             </button>
             <p className="text-center md:text-justify text-stone-900 text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px]">
               Yacht Ape is a collection of unique digital apes that you can own
