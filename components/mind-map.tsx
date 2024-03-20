@@ -1,3 +1,5 @@
+import Title from "./ui/title";
+
 const CARDS = [
   {
     title: "Yape Drop",
@@ -21,9 +23,9 @@ const CARDS = [
 const MindMap = () => {
   return (
     <section className="container pt-[60px] overflow-visible">
-      <h2 className="text-white text-[44px] md:text-[80px] lg:text-[160px] font-black uppercase leading-10 md:leading-[80px] lg:leading-[160px] text-center mb-6 md:mb-10 lg:mb-20">
-        Mind Map
-      </h2>
+      <div className="mb-6 md:mb-10 lg:mb-20">
+        <Title>Mind Map</Title>
+      </div>
 
       <div
         className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(284px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(504px,1fr))] gap-x-6 gap-y-6"
