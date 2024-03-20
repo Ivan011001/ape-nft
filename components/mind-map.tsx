@@ -1,3 +1,4 @@
+import Pagination from "./ui/pagination";
 import Section from "./ui/section";
 import Title from "./ui/title";
 
@@ -62,13 +63,8 @@ const MindMap = () => {
         </button>
       </div>
 
-      <div className="md:hidden flex items-center justify-center gap-12 mt-6">
-        <button className="text-white text-2xl font-normal font-biroScript leading-normal">
-          Prev
-        </button>
-        <button className="text-white text-2xl font-normal font-biroScript leading-normal">
-          Next
-        </button>
+      <div className="md:hidden">
+        <Pagination />
       </div>
     </Section>
   );
