@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+import Section from "./ui/section";
+
 const About = () => {
   return (
-    <section className="container pt-[60px] md:pt-[80px] lg:pt-[120px]">
+    <Section>
       <div className="md:relative flex flex-col md:flex-row md:flex-wrap justify-between">
         <p className="md:w-[269px] lg:w-[538px] max-h-fit text-white font-black text-[40px] md:text-6xl lg:text-[120px] leading-10 md:leading-[60px] lg:leading-[120px] uppercase md:mt-[-8px] lg:mt-[-18px] mb-4 md:mb-[68px] lg:mb-14">
           A story that started with{" "}
@@ -41,7 +43,7 @@ const About = () => {
       </div>
 
       <div className="bg-rose-500 h-[52px]"></div>
-    </section>
+    </Section>
   );
 };
 

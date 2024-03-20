@@ -1,3 +1,4 @@
+import Section from "./ui/section";
 import Title from "./ui/title";
 
 const CARDS = [
@@ -22,7 +23,7 @@ const CARDS = [
 
 const MindMap = () => {
   return (
-    <section className="container pt-[60px] overflow-visible">
+    <Section>
       <div className="mb-6 md:mb-10 lg:mb-20">
         <Title>Mind Map</Title>
       </div>
@@ -71,7 +72,7 @@ const MindMap = () => {
           Next
         </button>
       </div>
-    </section>
+    </Section>
   );
 };
 
