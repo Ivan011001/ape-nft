@@ -38,9 +38,7 @@ const FAQ_ITEMS = [
 ];
 
 const FAQ = () => {
-  const [selectedItemIndex, setSelectedItemIndex] = useState<null | number>(
-    null
-  );
+  const [selectedItemIndex, setSelectedItemIndex] = useState<null | number>(0);
 
   const handleSelectItem = (index: number) => {
     setSelectedItemIndex(index === selectedItemIndex ? null : index);
@@ -53,6 +51,7 @@ const FAQ = () => {
       </div>
 
       <Accordion
+        defaultValue="0"
         type="single"
         collapsible
         className="flex flex-col gap-y-2 md:gap-y-[18px] lg:gap-y-12"
