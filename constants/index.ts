@@ -75,3 +75,20 @@ export const MIND_MAP_ITEMS = [
       "Launch your own token, the proceeds of which will go to a global fund to LAUNCH YACHT CLUB AND PROMOTE it",
   },
 ];
+
+export const ARTS_ITEMS = [
+  { image: "/images/art/ape-1.jpg" },
+  { image: "/images/art/ape-2.jpg" },
+  { image: "/images/art/ape-3.jpg" },
+  { image: "/images/art/ape-4.jpg" },
+  { image: "/images/art/ape-5.jpg" },
+  { image: "/images/art/ape-6.jpg" },
+  { image: "/images/art/ape-7.jpg" },
+  { image: "/images/art/ape-8.jpg" },
+  { image: "/images/art/ape-9.jpg" },
+  { image: "/images/art/ape-10.jpg" },
+  { image: "/images/art/ape-11.jpg" },
+  { image: "/images/art/ape-12.jpg" },
+  { image: "/images/art/ape-13.jpg" },
+  { image: "/images/art/ape-14.jpg" },
+];
