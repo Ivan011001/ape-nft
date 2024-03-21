@@ -28,6 +28,7 @@ const Hero = () => {
             width={463}
             height={612}
             className="w-[216px] h-[284px] md:w-[283px] md:h-[386px] lg:w-[463px] lg:h-[612px] md:absolute md:bottom-0 md:right-[50%] md:translate-x-[45%]"
+            priority
           />
         </div>
 
