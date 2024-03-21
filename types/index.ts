@@ -10,3 +10,7 @@ export interface IFAQItem {
   answer: string;
   image: string;
 }
+
+export interface IArtsItem {
+  image: string;
+}
