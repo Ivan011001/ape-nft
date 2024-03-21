@@ -10,7 +10,7 @@ interface IMindMapListProps {
 const MindMapList = ({ items }: IMindMapListProps) => {
   return (
     <ul
-      className="hidden md:grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(284px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(504px,1fr))] gap-x-6 gap-y-6"
+      className="grid md:grid-cols-[repeat(auto-fill,minmax(284px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(504px,1fr))] gap-x-6 gap-y-6"
       style={{ gridAutoFlow: "row" }}
     >
       {items.map((item, index) => (
