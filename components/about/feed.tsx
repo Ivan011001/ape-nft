@@ -1,4 +1,4 @@
-import { InfiniteMovingCards } from "./infinite-moving";
+import { InfiniteMovingCards } from "../ui/infinite-moving";
 
 import { FEED_ITEMS } from "@/constants";
 
