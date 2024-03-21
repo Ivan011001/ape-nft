@@ -26,9 +26,7 @@ const FAQ = () => {
 
   return (
     <Section>
-      <div className="mb-6 md:mb-12 lg:mb-20">
-        <Title>FAQ</Title>
-      </div>
+      <Title className="mb-6 md:mb-12 lg:mb-20">FAQ</Title>
 
       <Accordion
         defaultValue="0"

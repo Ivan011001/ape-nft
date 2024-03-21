@@ -28,9 +28,7 @@ const MindMap = () => {
 
   return (
     <Section>
-      <div className="mb-6 md:mb-10 lg:mb-20">
-        <Title>Mind Map</Title>
-      </div>
+      <Title className="mb-6 md:mb-10 lg:mb-20">Mind Map</Title>
 
       <div
         className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(284px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(504px,1fr))] gap-x-6 gap-y-6"
