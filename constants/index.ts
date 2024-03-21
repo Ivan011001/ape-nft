@@ -23,6 +23,7 @@ export const SOCIAL_ITEMS = [
 
 export const FAQ_ITEMS = [
   {
+    id: 1,
     position: "[ 1 ]",
     question: "WHAT IS AN NFT COLLECTION?",
     answer:
@@ -30,6 +31,7 @@ export const FAQ_ITEMS = [
     image: "/images/faq/ape-1.jpg",
   },
   {
+    id: 2,
     position: "[ 2 ]",
     question: "HOW DO I PURCHASE NFTS FROM A COLLECTION?",
     answer:
@@ -37,6 +39,7 @@ export const FAQ_ITEMS = [
     image: "/images/faq/ape-2.jpg",
   },
   {
+    id: 3,
     position: "[ 3 ]",
     question: "CAN I SELL OR TRADE NFTS FROM A COLLECTION?",
     answer:
@@ -44,6 +47,7 @@ export const FAQ_ITEMS = [
     image: "/images/faq/ape-3.jpg",
   },
   {
+    id: 4,
     position: "[ 4 ]",
     question: "WHAT RIGHTS DO I HAVE AS AN OWNER OF AN NFT?",
     answer:
