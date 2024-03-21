@@ -3,6 +3,7 @@ import About from "@/components/about";
 import MindMap from "@/components/mind-map";
 import FAQ from "@/components/faq";
 import Arts from "@/components/arts";
+import Contact from "@/components/contact";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <MindMap />
       <FAQ />
       <Arts />
+      <Contact />
     </main>
   );
 };
