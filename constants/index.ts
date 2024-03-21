@@ -1,3 +1,9 @@
+export const FEED_ITEMS = [
+  { content: "Have no limits" },
+  { content: "Destroy stereotypes" },
+  { content: "Break rules" },
+];
+
 export const SOCIAL_ITEMS = [
   {
     href: "",

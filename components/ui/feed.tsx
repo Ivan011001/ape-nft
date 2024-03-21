@@ -1,31 +1,6 @@
 import { InfiniteMovingCards } from "./infinite-moving";
 
-const FEED_ITEMS = [
-  { content: "Have no limits" },
-  {
-    content: (
-      <svg className="fill-white w-9 h-9">
-        <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
-      </svg>
-    ),
-  },
-  { content: "Destroy stereotypes" },
-  {
-    content: (
-      <svg className="fill-white w-9 h-9">
-        <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
-      </svg>
-    ),
-  },
-  { content: "Break rules" },
-  {
-    content: (
-      <svg className="fill-white w-9 h-9">
-        <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
-      </svg>
-    ),
-  },
-];
+import { FEED_ITEMS } from "@/constants";
 
 const Feed = () => {
   return (
