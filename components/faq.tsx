@@ -1,6 +1,7 @@
-import Section from "../ui/section";
-import Title from "../ui/title";
-import FAQList from "./faq-list";
+import Section from "./ui/section";
+import Title from "./ui/title";
+
+import FAQList from "./faq/faq-list";
 
 import { FAQ_ITEMS } from "@/constants";
 

@@ -1,7 +1,8 @@
-import Section from "../ui/section";
-import Title from "../ui/title";
-import ContactDescription from "./contact-description";
-import ContactForm from "./contact-form";
+import Section from "./ui/section";
+import Title from "./ui/title";
+
+import ContactDescription from "./contact/contact-description";
+import ContactForm from "./contact/contact-form";
 
 const Contact = () => {
   return (

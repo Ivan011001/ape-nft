@@ -1,9 +1,9 @@
-import Hero from "@/components/hero";
 import About from "@/components/about";
-import MindMap from "@/components/mind-map";
-import FAQ from "@/components/faq";
 import Arts from "@/components/arts";
-import Contact from "@/components/contact";
+import FAQ from "@/components/faq";
+import Hero from "@/components/hero";
+import MindMap from "@/components/mind-map";
+import { Contact } from "lucide-react";
 
 const HomePage = () => {
   return (

@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-import Pagination from "../ui/pagination";
-import Section from "../ui/section";
-import Title from "../ui/title";
+import Pagination from "./ui/pagination";
+import Section from "./ui/section";
+import Title from "./ui/title";
 
-import MindMapList from "./mind-map-list";
-import MindMapCard from "./mind-map-card";
-import MindMapButton from "./mind-map-button";
+import MindMapList from "./mind-map/mind-map-list";
+import MindMapCard from "./mind-map/mind-map-card";
+import MindMapButton from "./mind-map/mind-map-button";
 
 import { MIND_MAP_ITEMS } from "@/constants";
 
