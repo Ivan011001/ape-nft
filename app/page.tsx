@@ -3,7 +3,8 @@ import Arts from "@/components/arts";
 import FAQ from "@/components/faq";
 import Hero from "@/components/hero";
 import MindMap from "@/components/mind-map";
-import { Contact } from "lucide-react";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <FAQ />
       <Arts />
       <Contact />
+      <Footer />
     </main>
   );
 };
