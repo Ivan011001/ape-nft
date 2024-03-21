@@ -1,6 +1,18 @@
-const Title = ({ children }: { children: React.ReactNode }) => {
+import { cn } from "@/lib/utils";
+
+interface ITitleProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Title = ({ children, className }: ITitleProps) => {
   return (
-    <h2 className="text-center text-white text-[44px] md:text-[80px] lg:text-[160px] font-black uppercase leading-10 md:leading-[80px] lg:leading-[160px]">
+    <h2
+      className={cn(
+        "text-center text-white text-[44px] md:text-[80px] lg:text-[160px] font-black uppercase leading-10 md:leading-[80px] lg:leading-[160px]",
+        className
+      )}
+    >
       {children}
     </h2>
   );

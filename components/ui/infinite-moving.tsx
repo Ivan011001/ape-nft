@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -11,15 +11,15 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    content: string | React.ReactNode;
+    content: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     addAnimation();
@@ -84,10 +84,17 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => (
-          <li className="max-w-full relative flex-shrink-0" key={idx}>
+          <li
+            className="max-w-full relative flex-shrink-0 flex items-center gap-x-6 lg:gap-x-9"
+            key={idx}
+          >
             <p className="text-white text-4xl lg:text-[64px] font-black uppercase leading-9 lg:leading-[64px]">
               {item.content}
             </p>
+
+            <svg className="fill-white w-9 h-9">
+              <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
+            </svg>
           </li>
         ))}
       </ul>

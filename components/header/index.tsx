@@ -1,5 +1,5 @@
-import Logo from "./ui/logo";
-import Socials from "./ui/socials";
+import Logo from "../ui/logo";
+import Socials from "./socials";
 
 const Header = () => {
   return (

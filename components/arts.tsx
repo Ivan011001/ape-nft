@@ -7,9 +7,7 @@ import Title from "./ui/title";
 const Arts = () => {
   return (
     <Section>
-      <div className="mb-6 md:mb-10 lg:mb-20">
-        <Title>Collection</Title>
-      </div>
+      <Title className="mb-6 md:mb-10 lg:mb-20">Collection</Title>
 
       <div className="flex flex-col items-center gap-y-6 lg:gap-y-12">
         <ul className="flex items-center gap-x-6">
