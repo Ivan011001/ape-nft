@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Section from "../ui/section";
-import Feed from "./feed";
+import Section from "./ui/section";
+import Feed from "./ui/feed";
 
 const About = () => {
   return (
