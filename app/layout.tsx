@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 import {
@@ -54,6 +55,7 @@ export default function RootLayout({
       <body
         className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
       >
+        <Toaster />
         {children}
       </body>
     </html>
