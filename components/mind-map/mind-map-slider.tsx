@@ -22,7 +22,7 @@ const MindMapSlider = ({ items }: IMindMapSliderProps) => {
       slidesPerView={1}
       spaceBetween={24}
       grabCursor
-      className="flex flex-col gap-y-6"
+      className="flex flex-col"
     >
       {items.map((item, index) => (
         <SwiperSlide key={index}>
@@ -34,7 +34,9 @@ const MindMapSlider = ({ items }: IMindMapSliderProps) => {
         <MindMapButton />
       </SwiperSlide>
 
-      <Pagination />
+      <div className="mt-6">
+        <Pagination />
+      </div>
     </Swiper>
   );
 };
