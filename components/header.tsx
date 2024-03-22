@@ -1,19 +1,20 @@
 import Logo from "./ui/logo";
 
-import Socials from "./header/socials";
 import Menu from "./header/menu";
+
+import Socials from "./header/socials";
 
 const Header = () => {
   return (
-    <header className="w-full px-2 pt-2 md:px-3 md:pt-3 lg:px-[96px] lg:pt-6 absolute top-0 right-0">
-      <div className="flex justify-between items-start">
+    <header className="w-full px-2 pt-2 md:px-3 md:pt-3 lg:px-[96px] lg:pt-6 absolute top-0 right-0 flex flex-col gap-y-2 lg:gap-y-4">
+      <div className="w-full flex justify-between items-center">
         <Logo />
 
-        <div className="flex flex-col items-end gap-y-2 lg:gap-y-4">
-          <Menu />
+        <Menu />
+      </div>
 
-          <Socials />
-        </div>
+      <div className="self-end">
+        <Socials />
       </div>
     </header>
   );
