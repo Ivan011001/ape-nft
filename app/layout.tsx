@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
 
-import "swiper/css";
 import "./globals.css";
 
 import {
