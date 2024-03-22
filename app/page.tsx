@@ -9,10 +9,7 @@ import Footer from "@/components/footer";
 const HomePage = () => {
   return (
     <main className="pt-[54px] lg:pt-4 pb-6 md:pb-10">
-      <section className="px-2 md:px-4">
-        <Hero />
-      </section>
-
+      <Hero />
       <About />
       <MindMap />
       <FAQ />
