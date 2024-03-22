@@ -1,7 +1,7 @@
 import Logo from "./ui/logo";
 
 import Menu from "./header/menu";
-
+import MobileMenu from "./header/mobile-menu";
 import Socials from "./header/socials";
 
 const Header = () => {
@@ -10,7 +10,13 @@ const Header = () => {
       <div className="w-full flex justify-between items-center">
         <Logo />
 
-        <Menu />
+        <div className="md:hidden">
+          <MobileMenu />
+        </div>
+
+        <div className="hidden md:block">
+          <Menu />
+        </div>
       </div>
 
       <div className="self-end">

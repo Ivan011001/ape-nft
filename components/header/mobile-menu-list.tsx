@@ -4,7 +4,7 @@ import { SheetClose } from "../ui/sheet";
 
 import { MENU_ITEMS } from "@/constants";
 
-const MenuList = () => {
+const MobileMenuList = () => {
   return (
     <nav className="flex flex-col gap-y-4 items-center">
       {MENU_ITEMS.map((item, index) => (
@@ -22,4 +22,4 @@ const MenuList = () => {
   );
 };
 
-export default MenuList;
+export default MobileMenuList;
