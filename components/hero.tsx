@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import Header from "./header";
@@ -35,7 +36,12 @@ const Hero = () => {
 
         <div className="md:flex justify-end">
           <div className="md:w-[190px] lg:w-[337px] flex flex-col md:flex-col-reverse gap-3 md:gap-4 lg:gap-7 lg:mt-[10px]">
-            <Button variant="secondary">Meet Apes</Button>
+            <Link href="#contact">
+              <Button variant="secondary" className="w-full">
+                Meet Apes
+              </Button>
+            </Link>
+
             <p className="text-center md:text-justify text-stone-900 text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px]">
               Yacht Ape is a collection of unique digital apes that you can own
               in NFT format
