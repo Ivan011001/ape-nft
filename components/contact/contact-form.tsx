@@ -54,6 +54,9 @@ const ContactForm = () => {
         .catch(() => {
           setButtonText("error");
           toast.error("Something went wrong");
+        })
+        .finally(() => {
+          form.reset();
         });
     });
   };
