@@ -5,6 +5,8 @@ import {
   AccordionItem,
 } from "../ui/accordion";
 
+import { motion } from "framer-motion";
+
 import { IFAQItem } from "@/types";
 
 import { cn } from "@/lib/utils";
@@ -56,13 +58,22 @@ const FAQItem = ({
         </h3>
       </AccordionTrigger>
       <AccordionContent className="text-white text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px] mt-[10px] md:mt-3 lg:mt-9 md:flex">
-        <Image
-          src={image}
-          alt="Ape"
-          width={248}
-          height={282}
-          className="origin-top-left hidden md:block md:absolute md:rounded-2xl lg:rounded-3xl md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px] md:rotate-[-16deg] lg:rotate-[-8deg] left-0 top-0"
-        />
+        {isSelected && (
+          <motion.div
+            className="hidden md:block md:absolute md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px] left-0 top-0"
+            initial={{ opacity: 0, scale: 1.3 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src={image}
+              alt="Ape"
+              width={248}
+              height={282}
+              className="origin-top-left md:rounded-2xl lg:rounded-3xl md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px] md:rotate-[-16deg] lg:rotate-[-8deg]"
+            />
+          </motion.div>
+        )}
         {answer}
       </AccordionContent>
     </AccordionItem>

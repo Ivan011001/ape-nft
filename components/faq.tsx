@@ -7,7 +7,7 @@ import { FAQ_ITEMS } from "@/constants";
 
 const FAQ = () => {
   return (
-    <Section>
+    <Section id="faq">
       <Title className="mb-6 md:mb-12 lg:mb-20">FAQ</Title>
 
       <FAQList items={FAQ_ITEMS} />

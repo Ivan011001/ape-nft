@@ -7,7 +7,7 @@ import { ARTS_ITEMS } from "@/constants";
 
 const Arts = () => {
   return (
-    <Section>
+    <Section id="arts">
       <Title className="mb-6 md:mb-10 lg:mb-20">Collection</Title>
 
       <ArtsList items={ARTS_ITEMS} />

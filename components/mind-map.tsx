@@ -8,7 +8,7 @@ import { MIND_MAP_ITEMS } from "@/constants";
 
 const MindMap = () => {
   return (
-    <Section>
+    <Section id="mind-map">
       <Title className="mb-6 md:mb-10 lg:mb-20">Mind Map</Title>
 
       <div className="md:hidden">
