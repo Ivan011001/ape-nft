@@ -1,18 +1,20 @@
 "use client";
 
-import { useSwiper } from "swiper/react";
+import { CarouselApi } from "./carousel";
 
 import { Button } from "./button";
 
-const Pagination = () => {
-  const swiper = useSwiper();
+interface IPaginationProps {
+  carouselApi: CarouselApi;
+}
 
+const Pagination = ({ carouselApi }: IPaginationProps) => {
   const handlePrevClick = () => {
-    swiper.slidePrev();
+    carouselApi?.scrollPrev();
   };
 
   const handleNextClick = () => {
-    swiper.slideNext();
+    carouselApi?.scrollNext();
   };
 
   return (

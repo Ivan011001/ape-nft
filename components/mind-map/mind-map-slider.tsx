@@ -1,13 +1,18 @@
 "use client";
 
-import Pagination from "../ui/pagination";
+import { useState } from "react";
 
 import MindMapCard from "./mind-map-card";
 import MindMapButton from "./mind-map-button";
+import Pagination from "../ui/pagination";
+import {
+  Carousel,
+  CarouselApi,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
-import { Navigation, A11y } from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import Autoplay from "embla-carousel-autoplay";
 
 import { IMindMapItem } from "@/types";
 
@@ -16,28 +21,35 @@ interface IMindMapSliderProps {
 }
 
 const MindMapSlider = ({ items }: IMindMapSliderProps) => {
+  const [api, setApi] = useState<CarouselApi>();
+
   return (
-    <Swiper
-      modules={[Navigation, A11y]}
-      slidesPerView={1}
-      spaceBetween={24}
-      grabCursor
-      className="flex flex-col"
+    <Carousel
+      setApi={setApi}
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
+      opts={{
+        align: "start",
+      }}
+      className="w-full flex flex-col gap-y-6 lg:gap-y-12"
     >
-      {items.map((item, index) => (
-        <SwiperSlide key={index}>
-          <MindMapCard title={item.title} description={item.description} />
-        </SwiperSlide>
-      ))}
+      <CarouselContent>
+        {items.map((item, index) => (
+          <CarouselItem key={index}>
+            <MindMapCard title={item.title} description={item.description} />
+          </CarouselItem>
+        ))}
 
-      <SwiperSlide>
-        <MindMapButton />
-      </SwiperSlide>
+        <CarouselItem>
+          <MindMapButton />
+        </CarouselItem>
+      </CarouselContent>
 
-      <div className="mt-6">
-        <Pagination />
-      </div>
-    </Swiper>
+      <Pagination carouselApi={api} />
+    </Carousel>
   );
 };
 
