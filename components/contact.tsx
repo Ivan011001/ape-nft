@@ -6,7 +6,7 @@ import ContactForm from "./contact/contact-form";
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Title className="mb-6 md:mb-10 lg:mb-20">Are you in?</Title>
 
       <div className="flex flex-col items-center gap-y-4 md:gap-y-6 lg:gap-y-10">

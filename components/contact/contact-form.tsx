@@ -9,6 +9,7 @@ import { contactSchema } from "@/schemas";
 
 import { contact } from "@/action/contact";
 
+import { Button } from "../ui/button";
 import { Input } from "@/components/ui/input";
 import {
   Form,
@@ -54,6 +55,9 @@ const ContactForm = () => {
         .catch(() => {
           setButtonText("error");
           toast.error("Something went wrong");
+        })
+        .finally(() => {
+          form.reset();
         });
     });
   };
@@ -130,13 +134,9 @@ const ContactForm = () => {
           )}
         />
 
-        <button
-          disabled={isPending}
-          type="submit"
-          className="pt-2.5 lg:pt-4 pb-3 lg:pb-5 bg-rose-500 rounded-lg lg:rounded-xl backdrop-blur-md text-white text-base lg:text-[28px] font-black uppercase leading-[19px] lg:leading-[34px] hover:text-stone-900 transition-all duration-300"
-        >
+        <Button disabled={isPending} type="submit">
           {buttonText}
-        </button>
+        </Button>
       </form>
     </Form>
   );

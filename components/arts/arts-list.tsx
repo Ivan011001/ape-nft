@@ -1,6 +1,6 @@
 "use client";
 
-import { useMediaQuery } from "usehooks-ts";
+import { useMediaQuery } from "@/hooks";
 
 import Pagination from "../ui/pagination";
 import ArtsItem from "./arts-item";
@@ -26,7 +26,7 @@ const ArtsList = ({ items }: IArtsListProps) => {
       slidesPerView={itemsPerSwipe}
       spaceBetween={24}
       grabCursor
-      className="flex flex-col items-center gap-y-6 lg:gap-y-12"
+      className="flex flex-col"
     >
       {items.map((item, index) => (
         <SwiperSlide
@@ -37,7 +37,9 @@ const ArtsList = ({ items }: IArtsListProps) => {
         </SwiperSlide>
       ))}
 
-      <Pagination />
+      <div className="mt-6 lg:mt-12">
+        <Pagination />
+      </div>
     </Swiper>
   );
 };

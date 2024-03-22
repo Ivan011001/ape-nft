@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-:root {
-  height: 100%;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
 

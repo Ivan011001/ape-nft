@@ -19,7 +19,9 @@ const MindMapList = ({ items }: IMindMapListProps) => {
         </li>
       ))}
 
-      <MindMapButton />
+      <li>
+        <MindMapButton />
+      </li>
     </ul>
   );
 };

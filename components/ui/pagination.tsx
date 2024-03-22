@@ -2,6 +2,8 @@
 
 import { useSwiper } from "swiper/react";
 
+import { Button } from "./button";
+
 const Pagination = () => {
   const swiper = useSwiper();
 
@@ -15,18 +17,13 @@ const Pagination = () => {
 
   return (
     <div className="flex items-center justify-center gap-12">
-      <button
-        onClick={handlePrevClick}
-        className="text-white text-2xl font-normal font-biroScript leading-normal hover:text-rose-500 transition-all duration-300"
-      >
+      <Button variant="ghost" size="sm" onClick={handlePrevClick}>
         Prev
-      </button>
-      <button
-        onClick={handleNextClick}
-        className="text-white text-2xl font-normal font-biroScript leading-normal hover:text-rose-500 transition-all duration-300"
-      >
+      </Button>
+
+      <Button variant="ghost" size="sm" onClick={handleNextClick}>
         Next
-      </button>
+      </Button>
     </div>
   );
 };
