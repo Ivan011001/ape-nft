@@ -1,7 +1,24 @@
-export const FEED_ITEMS = [
-  { content: "Have no limits" },
-  { content: "Destroy stereotypes" },
-  { content: "Break rules" },
+export const MENU_ITEMS = [
+  {
+    title: "About",
+    href: "about",
+  },
+  {
+    title: "M-Map",
+    href: "mind-map",
+  },
+  {
+    title: "FAQ",
+    href: "faq",
+  },
+  {
+    title: "Arts",
+    href: "arts",
+  },
+  {
+    title: "Mint",
+    href: "contact",
+  },
 ];
 
 export const SOCIAL_ITEMS = [
@@ -19,6 +36,12 @@ export const SOCIAL_ITEMS = [
     href: "",
     icon: "twitter",
   },
+];
+
+export const FEED_ITEMS = [
+  { content: "Have no limits" },
+  { content: "Destroy stereotypes" },
+  { content: "Break rules" },
 ];
 
 export const FAQ_ITEMS = [

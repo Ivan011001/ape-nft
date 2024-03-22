@@ -6,9 +6,9 @@ import Feed from "./ui/feed";
 const About = () => {
   return (
     <>
-      <Section>
+      <Section id="about">
         <div className="md:relative flex flex-col md:flex-row md:flex-wrap justify-between">
-          <p className="md:w-[269px] lg:w-[538px] max-h-fit text-white font-black text-[40px] md:text-6xl lg:text-[120px] leading-10 md:leading-[60px] lg:leading-[120px] uppercase md:mt-[-8px] lg:mt-[-18px] mb-4 md:mb-[68px] lg:mb-14">
+          <p className="md:w-[269px] lg:w-[538px] max-h-fit text-white font-black text-[40px] md:text-6xl lg:text-[120px] leading-10 md:leading-[60px] lg:leading-[120px] uppercase mb-4 md:mb-[68px] lg:mb-14">
             A story that started with{" "}
             <span className="text-rose-500">
               one simple <br className="md:hidden" />

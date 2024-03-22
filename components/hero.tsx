@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="md:flex justify-end">
           <div className="md:w-[190px] lg:w-[337px] flex flex-col md:flex-col-reverse gap-3 md:gap-4 lg:gap-7 lg:mt-[10px]">
             <Link href="#contact">
-              <Button variant="secondary" className="w-full">
+              <Button variant="secondary" className="w-full relative -top-1">
                 Meet Apes
               </Button>
             </Link>
