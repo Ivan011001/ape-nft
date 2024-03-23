@@ -1,7 +1,8 @@
+import Link from "next/link";
+
 import Logo from "../ui/logo";
 import Socials from "./socials";
 import MenuButton from "./menu-button";
-import MobileMenuList from "./mobile-menu-list";
 
 import {
   Sheet,
@@ -10,6 +11,8 @@ import {
   SheetClose,
   SheetFooter,
 } from "@/components/ui/sheet";
+
+import { MENU_ITEMS } from "@/constants";
 
 import { cn } from "@/lib/utils";
 
@@ -49,7 +52,18 @@ const MobileMenu = ({ light }: IMobileMenuProps) => {
             </div>
           </div>
 
-          <MobileMenuList />
+          <nav className={cn("flex flex-col gap-4 items-center")}>
+            {MENU_ITEMS.map(({ id, href, title }) => (
+              <SheetClose key={id} asChild>
+                <Link
+                  href={href}
+                  className="text-white text-2xl font-semibold font-messinaSans leading-[29px] uppercase"
+                >
+                  {title}
+                </Link>
+              </SheetClose>
+            ))}
+          </nav>
         </div>
 
         <SheetFooter className="flex justify-center">

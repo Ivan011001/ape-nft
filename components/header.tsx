@@ -16,7 +16,7 @@ const Header = () => {
       if (!aboutSection) return;
 
       const aboutSectionTop = aboutSection.offsetTop;
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY + 5;
 
       if (scrollPosition >= aboutSectionTop) {
         setReachedAbout(true);

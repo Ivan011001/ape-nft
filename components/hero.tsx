@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Header from "./header";
 import { Button } from "./ui/button";
+import Header from "./header";
 
 const Hero = () => {
   return (
