@@ -1,4 +1,5 @@
 export interface IMindMapItem {
+  id: number;
   title: string;
   description: string;
 }
@@ -12,5 +13,6 @@ export interface IFAQItem {
 }
 
 export interface IArtsItem {
+  id: number;
   image: string;
 }

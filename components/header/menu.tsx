@@ -41,14 +41,14 @@ const Menu = () => {
         side="left"
         className="h-12 lg:h-20 bg-stone-900 bg-opacity-10 flex backdrop-blur-md -mr-[4px]"
       >
-        {MENU_ITEMS.map((item, index) => (
+        {MENU_ITEMS.map(({ id, href, title }) => (
           <DropdownMenuItem
             asChild
-            key={index}
+            key={id}
             className=" cursor-pointer w-12 lg:w-20 text-stone-900 hover:text-white hover:underline text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase flex items-center justify-center transition-all duration-300"
           >
-            <Link href={`#${item.href}`} className="">
-              {item.title}
+            <Link href={href} className="">
+              {title}
             </Link>
           </DropdownMenuItem>
         ))}

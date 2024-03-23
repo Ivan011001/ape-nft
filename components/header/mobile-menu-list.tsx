@@ -7,14 +7,13 @@ import { MENU_ITEMS } from "@/constants";
 const MobileMenuList = () => {
   return (
     <nav className="flex flex-col gap-y-4 items-center">
-      {MENU_ITEMS.map((item, index) => (
-        <SheetClose key={index} asChild>
+      {MENU_ITEMS.map(({ id, href, title }) => (
+        <SheetClose key={id} asChild>
           <Link
-            key={index}
-            href={`#${item.href}`}
+            href={href}
             className="text-white text-2xl font-semibold font-messinaSans leading-[29px] uppercase"
           >
-            {item.title}
+            {title}
           </Link>
         </SheetClose>
       ))}
