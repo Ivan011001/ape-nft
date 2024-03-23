@@ -47,8 +47,7 @@
 
 ## About The Project
 
-
-
+https://github.com/Ivan011001/ape-nft/assets/126008836/c1016f59-2833-411f-ade2-a4ef22ceae24
 
 **Introducing the Ape NFTs Collection Landing Page!**
 
