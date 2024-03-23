@@ -56,7 +56,7 @@ export default function RootLayout({
       <body
         className={`${messinaSans.variable} ${biroScript.variable} ${biroScriptUS.variable} ${rightGrotesk.className}`}
       >
-        <Toaster />
+        <Toaster theme="light" />
         {children}
       </body>
     </html>

@@ -7,7 +7,7 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema } from "@/schemas";
 
-import { contact } from "@/action/contact";
+import { contact } from "@/actions/contact";
 
 import { Button } from "../ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,17 +44,23 @@ const ContactForm = () => {
         .then((data) => {
           if (data.error) {
             setButtonText("error");
-            toast.error(data.error);
+            toast.error(data.error, {
+              style: { backgroundColor: "#DC3B5A", color: "white" },
+            });
           }
 
           if (data.success) {
             setButtonText("minted");
-            toast.success(data.success);
+            toast.success(data.success, {
+              style: { backgroundColor: "#DC3B5A", color: "white" },
+            });
           }
         })
         .catch(() => {
           setButtonText("error");
-          toast.error("Something went wrong");
+          toast.error("Something went wrong", {
+            style: { backgroundColor: "#DC3B5A", color: "white" },
+          });
         })
         .finally(() => {
           form.reset();
