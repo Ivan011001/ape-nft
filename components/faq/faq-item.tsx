@@ -43,22 +43,22 @@ const FAQItem = ({
       >
         <span
           className={cn(
-            "flex-shrink-0 text-rose-500 text-xs md:text-base lg:text-2xl font-normal font-biroScriptUS leading-8 md:leading-[40px] lg:leading-[70px] group-hover:text-white trnasition-all duration-300",
-            isSelected && "text-white"
+            "flex-shrink-0 text-accent text-xs md:text-base lg:text-2xl font-normal font-biroScriptUS leading-8 md:leading-[40px] lg:leading-[70px] group-hover:text-primary trnasition-all duration-300",
+            isSelected && "text-primary"
           )}
         >
           {position}
         </span>
         <h3
           className={cn(
-            "text-start text-white text-xl md:text-[32px] lg:text-[64px] font-black uppercase leading-tight md:leading-[32px] lg:leading-[64px] group-hover:text-rose-500 trnasition-all duration-300",
-            isSelected && "text-rose-500"
+            "text-start text-primary text-xl md:text-[32px] lg:text-[64px] font-black uppercase leading-tight md:leading-[32px] lg:leading-[64px] group-hover:text-accent trnasition-all duration-300",
+            isSelected && "text-accent"
           )}
         >
           {question}
         </h3>
       </AccordionTrigger>
-      <AccordionContent className="text-white text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px] mt-[10px] md:mt-3 lg:mt-9 md:flex">
+      <AccordionContent className="text-primary text-xs lg:text-base font-normal font-messinaSans uppercase leading-[14px] lg:leading-[19px] mt-[10px] md:mt-3 lg:mt-9 md:flex">
         {isSelected && (
           <motion.div
             className="hidden md:block md:absolute md:w-[148px] md:h-[183px] lg:w-[248px] lg:h-[282px] left-0 top-0"

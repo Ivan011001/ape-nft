@@ -30,9 +30,9 @@ const Menu = ({ light }: IMenuProps) => {
       >
         <button
           className={cn(
-            "h-12 w-12 lg:h-20 lg:w-20 bg-neutral-900 bg-opacity-10 rounded-l-lg rounded-r-lg lg:rounded-r-[12px] lg:rounded-l-[12px] backdrop-blur-md flex justify-center items-center text-neutral-900 text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase hover:underline hover:text-white transition-all duration-300",
+            "h-12 w-12 lg:h-20 lg:w-20 bg-stone-900 bg-opacity-10 rounded-l-lg rounded-r-lg lg:rounded-r-[12px] lg:rounded-l-[12px] backdrop-blur-md flex justify-center items-center text-secondary text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase hover:underline hover:text-primary transition-all duration-300",
             open && "rounded-l-none lg:rounded-l-none",
-            light && "bg-white text-white hover:text-rose-500"
+            light && "bg-white text-primary hover:text-accent"
           )}
         >
           {open ? "Close" : "Menu"}
@@ -49,8 +49,8 @@ const Menu = ({ light }: IMenuProps) => {
           <DropdownMenuItem
             key={id}
             className={cn(
-              "cursor-pointer w-12 lg:w-20 text-stone-900 hover:text-white hover:underline text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase flex items-center justify-center transition-all duration-300",
-              light && "text-white hover:text-rose-500"
+              "cursor-pointer w-12 lg:w-20 text-secondary hover:text-primary hover:underline text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase flex items-center justify-center transition-all duration-300",
+              light && "text-primary hover:text-accent"
             )}
           >
             <Link

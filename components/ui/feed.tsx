@@ -4,7 +4,7 @@ import { FEED_ITEMS } from "@/constants";
 
 const Feed = () => {
   return (
-    <div className="pt-[6px] pb-[9px] lg:pb-4 bg-rose-500">
+    <div className="pt-[6px] pb-[9px] lg:pb-4 bg-accent">
       <InfiniteMovingCards
         items={FEED_ITEMS}
         direction="right"

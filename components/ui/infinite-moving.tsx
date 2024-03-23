@@ -88,11 +88,11 @@ export const InfiniteMovingCards = ({
             className="max-w-full relative flex-shrink-0 flex items-center gap-x-6 lg:gap-x-9"
             key={idx}
           >
-            <p className="text-white text-4xl lg:text-[64px] font-black uppercase leading-9 lg:leading-[64px]">
+            <p className="text-primary text-4xl lg:text-[64px] font-black uppercase leading-9 lg:leading-[64px]">
               {item.content}
             </p>
 
-            <svg className="fill-white w-9 h-9">
+            <svg className="fill-primary w-9 h-9">
               <use xlinkHref="/icons/sprite.svg#icon-cross"></use>
             </svg>
           </li>

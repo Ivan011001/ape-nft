@@ -25,8 +25,8 @@ const Socials = ({ light }: ISocialsProps) => {
           >
             <svg
               className={cn(
-                "h-4 w-4 md:w-6 md:h-6 fill-stone-900 group-hover:fill-white transition-all duration-300",
-                light && "fill-white group-hover:fill-rose-500"
+                "h-4 w-4 md:w-6 md:h-6 fill-secondary group-hover:fill-primary transition-all duration-300",
+                light && "fill-primary group-hover:fill-accent"
               )}
             >
               <use xlinkHref={`/icons/sprite.svg#icon-${icon}`}></use>
