@@ -33,22 +33,36 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full px-4 pt-[62px] md:px-7 md:pt-[66px] lg:px-8 lg:pt-[33px] fixed top-0 right-0 flex flex-col gap-y-2 lg:gap-y-4">
-      <div className="w-full flex justify-between items-center">
-        {reachedAbout ? <Logo light /> : <Logo />}
+    <header className="w-full relative">
+      {reachedAbout ? (
+        <div className="w-full flex justify-end items-center fixed top-0 right-0 px-4 pt-[62px] md:px-7 md:pt-[66px] lg:px-8 lg:pt-[33px]">
+          <div className="md:hidden">
+            <MobileMenu light />
+          </div>
 
-        <div className="md:hidden">
-          {reachedAbout ? <MobileMenu light /> : <MobileMenu />}
+          <div className="hidden md:block">
+            <Menu light />
+          </div>
         </div>
+      ) : (
+        <>
+          <div className="flex justify-between items-center px-4 pt-[62px] md:px-7 md:pt-[66px] lg:px-8 lg:pt-[33px] fixed top-0 left-0">
+            <Logo />
+          </div>
 
-        <div className="hidden md:block">
-          {reachedAbout ? <Menu light /> : <Menu />}
-        </div>
-      </div>
+          <div className="flex flex-col gap-y-2 lg:gap-y-4 items-center px-4 pt-[62px] md:px-7 md:pt-[66px] lg:px-8 lg:pt-[33px] fixed top-0 right-0">
+            <div className="md:hidden">
+              <MobileMenu />
+            </div>
 
-      <div className="self-end">
-        {reachedAbout ? <Socials light /> : <Socials />}
-      </div>
+            <div className="hidden md:block">
+              <Menu />
+            </div>
+
+            <Socials />
+          </div>
+        </>
+      )}
     </header>
   );
 };
