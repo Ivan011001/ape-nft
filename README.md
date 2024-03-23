@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
+
+<br />
+<div align="center">
+  <a href="https://github.com/Ivan011001/ape-nft">
+    <img src="public/images/preview.png" alt="Logo" width="1200" height="530">
+  </a>
+
+  <h3 align="center">Ape NFT</h3>
+
+  <p align="center">
+      A place to learn more about favourite Apes!
+    <br />
+    <a href="https://github.com/Ivan011001/ape-nft"><strong>Explore the code »</strong></a>
+    <br />
+    <br />
+    <a href="https://ape-nft-rouge.vercel.app">View Demo</a>
+    ·
+    <a href="https://github.com/Ivan011001/ape-nft/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Ivan011001/ape-nft/issues">Request Feature</a>
+  </p>
+</div>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+## About The Project
+
+
+
+
+**Introducing the Ape NFTs Collection Landing Page!**
+
+Unlock the doorway to a captivating world of digital art with us. Ape NFT stand out as your all-in-one solution, simplifying your journey while making it utterly fascinating.
+
+Why Choose Us?
+
+* Community Connection: Join a vibrant community of art enthusiasts for discussions, collaborations, and events.
+* Exclusive Benefits: Gain access to early releases, promotions, and unique experiences reserved for members.
+* Swift Progress: Your dedication yields quick results. Experience art and make it an integral part of your life sooner than you think.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Key Features
+
+Ape NFT Webpage gives an opportunity to discover more interesting facts about Apes that everyone knows about.
+Here are some examples of what users can do:
+
+- [x] Learn more about us
+- [x] Find us on other platforms
+- [x] Explore Apes collection
+- [x] Find answers to common questions
+- [x] Mint exclusive NFT
+
+     
+### Built With
+
+
+[![Next][Next.js]][Next-url]
+[![React][React.js]][React-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Getting Started
 
-First, run the development server:
+If you would like to enhance this project, here are instructions on setting it up locally.
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have Node.js installed, check it version via
+  ```sh
+  node -v
+  ```
+It should be higher that 18.0.0
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Ivan011001/ape-nft.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the app on `localhost:3000`
+   ```sh
+   npm run dev
+   ```
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Deploy on Vercel
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Contact
+
+Ivan Nedokhodiuk - [LinkedIn](https://www.linkedin.com/in/ivan-nedokhodiuk) - nedokhodiukivan@gmail.com
+
+Project Link: [Ape NFT Webpage](https://ape-nft-rouge.vercel.app)
+
+Layout Link: [Ape NFT Layout](https://www.figma.com/file/NhwvCnRetLh4PsJY3rD2d6/Ape-NFT?type=design&node-id=51%3A952&mode=design&t=FRLZSC6KhEuOSkVs-1)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
