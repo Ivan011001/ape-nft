@@ -11,8 +11,8 @@ const Logo = ({ light }: ILogoProps) => {
     <Link href="/" className="group">
       <svg
         className={cn(
-          "w-12 h-8 lg:w-[72px] lg:h-[50px] fill-stone-900 group-hover:fill-white transition-all duration-300",
-          light && "fill-white group-hover:fill-rose-500"
+          "w-12 h-8 lg:w-[72px] lg:h-[50px] fill-secondary group-hover:fill-primary transition-all duration-300",
+          light && "fill-primary group-hover:fill-accent"
         )}
       >
         <use xlinkHref="/icons/sprite.svg#icon-logo"></use>

@@ -89,7 +89,7 @@ const ContactForm = () => {
                     className={cn(
                       "",
                       form.formState.errors.discord &&
-                        "text-rose-500 border-rose-500"
+                        "text-accent border-accent"
                     )}
                     {...field}
                   />
@@ -123,7 +123,7 @@ const ContactForm = () => {
                     className={cn(
                       "",
                       form.formState.errors.address &&
-                        "text-rose-500 border-rose-500"
+                        "text-accent border-accent"
                     )}
                   />
                 </FormControl>

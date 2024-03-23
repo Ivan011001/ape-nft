@@ -5,20 +5,20 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center primaryspace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
-          "bg-rose-500 rounded-lg lg:rounded-xl backdrop-blur-md text-white text-base lg:text-[28px] font-black uppercase leading-[19px] lg:leading-[34px] hover:text-stone-900 transition-all duration-300",
+          "bg-accent rounded-lg lg:rounded-xl backdrop-blur-md text-primary text-base lg:text-[28px] font-black uppercase leading-[19px] lg:leading-[34px] hover:text-secondary transition-all duration-300",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
-          "bg-stone-900 bg-opacity-10 rounded-lg lg:rounded-xl backdrop-blur-md inline-flex justify-center items-center text-white hover:text-stone-900 md:text-stone-900 md:hover:text-white text-base lg:text-[28px] font-black leading-[19px] uppercase transition-all duration-300",
+          "bg-stone-900 bg-opacity-10 rounded-lg lg:rounded-xl backdrop-blur-md inline-flex justify-center items-center text-primary hover:text-secondary md:text-secondary md:hover:text-primary text-base lg:text-[28px] font-black leading-[19px] uppercase transition-all duration-300",
         ghost:
-          "text-white text-2xl font-normal font-biroScript leading-normal hover:text-rose-500 transition-all duration-300",
+          "text-primary text-2xl font-normal font-biroScript leading-normal hover:text-accent transition-all duration-300",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

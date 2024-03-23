@@ -37,9 +37,9 @@ const MindMapSlider = ({ items }: IMindMapSliderProps) => {
       className="w-full flex flex-col gap-y-6 lg:gap-y-12"
     >
       <CarouselContent>
-        {items.map((item, index) => (
-          <CarouselItem key={index}>
-            <MindMapCard title={item.title} description={item.description} />
+        {items.map(({ id, title, description }) => (
+          <CarouselItem key={id}>
+            <MindMapCard title={title} description={description} />
           </CarouselItem>
         ))}
 

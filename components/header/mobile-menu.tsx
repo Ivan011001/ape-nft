@@ -1,24 +1,33 @@
+import Link from "next/link";
+
 import Logo from "../ui/logo";
 import Socials from "./socials";
 import MenuButton from "./menu-button";
-import MobileMenuList from "./mobile-menu-list";
 
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetFooter,
 } from "@/components/ui/sheet";
+
+import { MENU_ITEMS } from "@/constants";
 
 import { cn } from "@/lib/utils";
 
-const MobileMenu = () => {
+interface IMobileMenuProps {
+  light?: boolean;
+}
+
+const MobileMenu = ({ light }: IMobileMenuProps) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
         <button
           className={cn(
-            "h-12 w-12 lg:h-20 lg:w-20 bg-stone-900 bg-opacity-10 rounded-l-lg rounded-r-lg lg:rounded-l-[12px] lg:rounded-r-[12px] backdrop-blur-md flex justify-center items-center text-stone-900 text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase hover:underline hover:text-white transition-all duration-300"
+            "h-12 w-12 lg:h-20 lg:w-20 bg-stone-900 bg-opacity-10 rounded-l-lg rounded-r-lg lg:rounded-l-[12px] lg:rounded-r-[12px] backdrop-blur-md flex justify-center items-center text-stone-900 text-xs lg:text-base font-semibold font-messinaSans leading-[14px] lg:leading-[19px] uppercase hover:underline hover:text-white transition-all duration-300",
+            light && "bg-white text-white"
           )}
         >
           Menu
@@ -33,7 +42,7 @@ const MobileMenu = () => {
                 <Logo light />
               </SheetClose>
 
-              <SheetClose asChild>
+              <SheetClose>
                 <MenuButton isModal label="Close" />
               </SheetClose>
             </div>
@@ -43,14 +52,25 @@ const MobileMenu = () => {
             </div>
           </div>
 
-          <MobileMenuList />
+          <nav className={cn("flex flex-col gap-4 items-center")}>
+            {MENU_ITEMS.map(({ id, href, title }) => (
+              <SheetClose key={id} asChild>
+                <Link
+                  href={href}
+                  className="text-white text-2xl font-semibold font-messinaSans leading-[29px] uppercase"
+                >
+                  {title}
+                </Link>
+              </SheetClose>
+            ))}
+          </nav>
         </div>
 
-        <div className="flex justify-center">
+        <SheetFooter className="flex justify-center">
           <p className="w-[216px] text-center text-white text-xs font-normal font-messinaSans uppercase leading-[14px]">
             © Yacht ape 2024 all rights reserved
           </p>
-        </div>
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

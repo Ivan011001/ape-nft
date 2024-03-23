@@ -37,8 +37,8 @@ const ArtsList = ({ items }: IArtsListProps) => {
       className="w-full flex flex-col gap-y-6 lg:gap-y-12"
     >
       <CarouselContent>
-        {items.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+        {items.map((item) => (
+          <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/4">
             <ArtsItem item={item} />
           </CarouselItem>
         ))}

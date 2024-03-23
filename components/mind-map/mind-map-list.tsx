@@ -13,9 +13,9 @@ const MindMapList = ({ items }: IMindMapListProps) => {
       className="grid md:grid-cols-[repeat(auto-fill,minmax(284px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(504px,1fr))] gap-x-6 gap-y-6"
       style={{ gridAutoFlow: "row" }}
     >
-      {items.map((item, index) => (
-        <li key={index}>
-          <MindMapCard title={item.title} description={item.description} />
+      {items.map(({ id, title, description }) => (
+        <li key={id}>
+          <MindMapCard title={title} description={description} />
         </li>
       ))}
 

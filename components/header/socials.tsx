@@ -9,24 +9,29 @@ interface ISocialsProps {
 const Socials = ({ light }: ISocialsProps) => {
   return (
     <ul className="flex flex-col gap-y-2 lg:gap-y-4">
-      {SOCIAL_ITEMS.map((social, index) => (
+      {SOCIAL_ITEMS.map(({ id, icon, href }) => (
         <li
-          key={index}
+          key={id}
           className={cn(
             "group h-12 w-12 lg:h-20 lg:w-20 bg-stone-900 bg-opacity-10 rounded-lg md:rounded-[12px] backdrop-blur-md",
             light && "bg-white"
           )}
         >
-          <button className="w-full h-full flex justify-center items-center">
+          <a
+            href={href}
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className="w-full h-full flex justify-center items-center"
+          >
             <svg
               className={cn(
-                "h-4 w-4 md:w-6 md:h-6 fill-stone-900 group-hover:fill-white transition-all duration-300",
-                light && "fill-white group-hover:fill-rose-500"
+                "h-4 w-4 md:w-6 md:h-6 fill-secondary group-hover:fill-primary transition-all duration-300",
+                light && "fill-primary group-hover:fill-accent"
               )}
             >
-              <use xlinkHref={`/icons/sprite.svg#icon-${social.icon}`}></use>
+              <use xlinkHref={`/icons/sprite.svg#icon-${icon}`}></use>
             </svg>
-          </button>
+          </a>
         </li>
       ))}
     </ul>
