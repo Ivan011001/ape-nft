@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Ivan011001/ape-nft">
-    <img src="public/images/preview.png" alt="Logo" width="1200" height="530">
+    <img src="public/images/preview.png" alt="Logo" width="1200" height="430">
   </a>
 
   <h3 align="center">Ape NFT</h3>
