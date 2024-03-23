@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header className="w-full relative">
       {reachedAbout ? (
-        <div className="w-full flex justify-end items-center fixed top-0 right-0 px-4 pt-[62px] md:px-7 md:pt-[66px] lg:px-8 lg:pt-[33px]">
+        <div className="flex justify-end items-center fixed top-0 right-0 px-4 pt-[62px] md:px-7 md:pt-[66px] lg:px-8 lg:pt-[33px]">
           <div className="md:hidden">
             <MobileMenu light />
           </div>
