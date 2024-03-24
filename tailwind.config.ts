@@ -19,18 +19,21 @@ const config = {
       center: true,
       padding: {
         DEFAULT: "1rem",
+        xs: "72px",
         sm: "72px",
         md: "88px",
         lg: "120px",
       },
       screens: {
-        sm: "360px",
+        xs: "360px",
+        sm: "480px",
         md: "768px",
         lg: "1280px",
       },
     },
     screens: {
-      sm: "360px",
+      xs: "360px",
+      sm: "480px",
       md: "768px",
       lg: "1280px",
     },

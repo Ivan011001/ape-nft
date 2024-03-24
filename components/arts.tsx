@@ -10,7 +10,9 @@ const Arts = () => {
     <Section id="arts">
       <Title className="mb-6 md:mb-10 lg:mb-20">Collection</Title>
 
-      <ArtsList items={ARTS_ITEMS} />
+      <div className="w-full flex items-center justify-center">
+        <ArtsList items={ARTS_ITEMS} />
+      </div>
     </Section>
   );
 };

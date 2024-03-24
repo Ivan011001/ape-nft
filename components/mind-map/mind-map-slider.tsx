@@ -34,7 +34,7 @@ const MindMapSlider = ({ items }: IMindMapSliderProps) => {
       opts={{
         align: "start",
       }}
-      className="w-full flex flex-col gap-y-6 lg:gap-y-12"
+      className="w-[216px] md:w-[284px] lg:w-[504px] flex flex-col gap-y-6 lg:gap-y-12"
     >
       <CarouselContent>
         {items.map(({ id, title, description }) => (
