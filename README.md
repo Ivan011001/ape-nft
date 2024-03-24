@@ -77,8 +77,15 @@ Here are some examples of what users can do:
 ### Built With
 
 
-[![Next][Next.js]][Next-url]
 [![React][React.js]][React-url]
+[![Next][Next.js]][Next-url]
+[![TypeScript][TypeScript]][TypeScript-url]
+[![Tailwind][Tailwind.css]][Tailwind-url]
+[![Framer][Framer]][Framer-url]
+[![Figma][Figma]][Figma-url]
+[![EsLint][EsLint]][EsLint-url]
+[![Vercel][Vercel]][Vercel-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,3 +151,15 @@ Layout Link: [Ape NFT Layout](https://www.figma.com/file/NhwvCnRetLh4PsJY3rD2d6/
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[TypeScript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[Tailwind.css]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[Vercel]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: [https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white](https://vercel.com/)
+[Framer]: https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue
+[Framer-url]: https://www.framer.com/motion/
+[Figma]: https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white
+[Figma-url]: https://www.figma.com/
+[EsLint]: https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white
+[EsLint-url]: https://eslint.org/
