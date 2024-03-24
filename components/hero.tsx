@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="relative bg-accent rounded-[12px] md:rounded-[16px] lg:rounded-[24px] pb-[19px] md:pb-[35px] lg:pb-[81px] pt-9 md:pt-[124px] lg:pt-[197px]">
         <Header />
 
-        <div className="container md:max-w-[736px] lg:max-w-[1248px] px-[64px] md:px-[72px] lg:px-[115px]">
+        <div className="container xs:max-w-[464px] md:max-w-[736px] lg:max-w-[1248px] px-[64px] md:px-[72px] lg:px-[115px]">
           <p className="text-secondary text-base md:text-xl lg:text-2xl font-normal font-biroScript leading-[27px] md:leading-[33px] lg:leading-10 text-center md:text-start">
             diD yOu seE iT ?
           </p>
@@ -35,9 +35,12 @@ const Hero = () => {
           </div>
 
           <div className="md:flex justify-end">
-            <div className="md:w-[190px] lg:w-[337px] flex flex-col md:flex-col-reverse gap-3 md:gap-4 lg:gap-7">
-              <Link href="#contact">
-                <Button variant="secondary" className="w-full relative -top-1">
+            <div className="md:w-[190px] lg:w-[337px] flex flex-col items-center md:flex-col-reverse gap-3 md:gap-4 lg:gap-7">
+              <Link
+                href="#contact"
+                className="w-[216px] md:w-full relative -top-1"
+              >
+                <Button variant="secondary" className="w-full">
                   Meet Apes
                 </Button>
               </Link>

@@ -38,7 +38,7 @@ const FAQItem = ({
       )}
     >
       <AccordionTrigger
-        className="group flex items-start gap-x-2 md:gap-x-6 lg:gap-x-7"
+        className="group flex items-start justify-start gap-x-2 md:gap-x-6 lg:gap-x-7 text-left"
         onClick={onSelectItem}
       >
         <span

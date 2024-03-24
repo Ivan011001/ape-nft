@@ -34,14 +34,16 @@ const About = () => {
             </p>
           </div>
 
-          <Image
-            src="/images/about.png"
-            alt="Ape with glasses"
-            width={492}
-            height={662}
-            className="md:absolute md:bottom-0 md:right-0 w-[216px] h-[292px] md:w-[313px] md:h-[422px] lg:w-[492px] lg:h-[662px]"
-            priority
-          />
+          <div className="flex justify-center md:absolute md:bottom-0 md:right-0">
+            <Image
+              src="/images/about.png"
+              alt="Ape with glasses"
+              width={492}
+              height={662}
+              className=" w-[216px] h-[292px] md:w-[313px] md:h-[422px] lg:w-[492px] lg:h-[662px]"
+              priority
+            />
+          </div>
         </div>
       </Section>
 

@@ -11,7 +11,7 @@ const MindMap = () => {
     <Section id="mind-map">
       <Title className="mb-6 md:mb-10 lg:mb-20">Mind Map</Title>
 
-      <div className="md:hidden">
+      <div className="md:hidden w-full flex items-center justify-center">
         <MindMapSlider items={MIND_MAP_ITEMS} />
       </div>
 
